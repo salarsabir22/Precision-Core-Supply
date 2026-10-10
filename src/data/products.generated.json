@@ -1,0 +1,1145 @@
+[
+  {
+    "slug": "fluke-302-325-clamp-meter",
+    "name": "Fluke 302+ / Fluke 325 True-RMS Clamp Meter",
+    "sku": "PK-0001",
+    "mpn": "302+ / 325",
+    "brand": "fluke",
+    "category": "electrical-test",
+    "description": "True-RMS clamp meter family covering the Fluke 302+ and Fluke 325.",
+    "specs": {
+      "Type": "True-RMS clamp meter",
+      "Models": "302+, 325"
+    },
+    "images": [
+      "/products/fluke-302-325-clamp-meter.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "fluke-376-fc-iflex",
+    "name": "Fluke 376 FC True-RMS Clamp with iFlex (up to 2500A AC)",
+    "sku": "PK-0002",
+    "mpn": "Fluke 376 FC",
+    "brand": "fluke",
+    "category": "electrical-test",
+    "description": "True-RMS AC/DC clamp meter with an iFlex flexible probe rated up to 2500 A AC.",
+    "specs": {
+      "Type": "True-RMS clamp meter",
+      "iFlex": "Up to 2500 A AC"
+    },
+    "images": [
+      "/products/fluke-376-fc-iflex.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "fluke-771-773-milliamp-clamp",
+    "name": "Fluke 771 / 773 Milliamp Process Clamp Meter",
+    "sku": "PK-0003",
+    "mpn": "771 / 773",
+    "brand": "fluke",
+    "category": "electrical-test",
+    "description": "Milliamp process clamp meter for measuring 4–20 mA signals without breaking the loop.",
+    "specs": {
+      "Type": "Milliamp process clamp meter",
+      "Models": "771, 773"
+    },
+    "images": [
+      "/products/fluke-771-773-milliamp-clamp.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "megger-mit420-2",
+    "name": "Megger MIT420/2 Handheld 1 kV Insulation Tester",
+    "sku": "PK-0004",
+    "mpn": "MIT420/2",
+    "brand": "megger",
+    "category": "electrical-test",
+    "description": "Handheld insulation tester rated to 1 kV.",
+    "specs": {
+      "Type": "Insulation tester",
+      "Voltage": "1 kV"
+    },
+    "images": [
+      "/products/megger-mit420-2.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "megger-mit515",
+    "name": "Megger MIT515 5 kV High-Voltage Insulation Tester",
+    "sku": "PK-0005",
+    "mpn": "MIT515",
+    "brand": "megger",
+    "category": "electrical-test",
+    "description": "High-voltage insulation resistance tester rated to 5 kV.",
+    "specs": {
+      "Type": "Insulation tester",
+      "Voltage": "5 kV"
+    },
+    "images": [
+      "/products/megger-mit515.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "testo-310-combustion-analyzer",
+    "name": "Testo 310 / 310 II Combustion Flue Gas Analyzer Kit",
+    "sku": "PK-0006",
+    "mpn": "310 / 310 II",
+    "brand": "testo",
+    "category": "electrical-test",
+    "description": "Combustion flue-gas analyzer kit in the Testo 310 family.",
+    "specs": {
+      "Type": "Combustion analyzer",
+      "Models": "310, 310 II"
+    },
+    "images": [
+      "/products/testo-310-combustion-analyzer.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "testo-868-thermal-imager",
+    "name": "Testo 868 Infrared Thermal Imager (160x120 IR)",
+    "sku": "PK-0007",
+    "mpn": "Testo 868",
+    "brand": "testo",
+    "category": "electrical-test",
+    "description": "Infrared thermal imager with a 160 × 120 IR detector.",
+    "specs": {
+      "Type": "Thermal imager",
+      "Resolution": "160 × 120"
+    },
+    "images": [
+      "/products/testo-868-thermal-imager.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "extech-ex830",
+    "name": "Extech EX830 1000A Clamp with Built-in IR Thermometer",
+    "sku": "PK-0008",
+    "mpn": "EX830",
+    "brand": "extech",
+    "category": "electrical-test",
+    "description": "1000 A true-RMS clamp meter with a built-in infrared thermometer.",
+    "specs": {
+      "Type": "Clamp meter",
+      "Current": "1000 A",
+      "IR thermometer": "Built in"
+    },
+    "images": [
+      "/products/extech-ex830.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "extech-mn16-kit",
+    "name": "Extech MN16-KIT Electrical Test Kit (Multimeter + NCV)",
+    "sku": "PK-0009",
+    "mpn": "MN16-KIT",
+    "brand": "extech",
+    "category": "electrical-test",
+    "description": "Electrical test kit with a multimeter and non-contact voltage detector.",
+    "specs": {
+      "Type": "Electrical test kit",
+      "Includes": "Multimeter, NCV"
+    },
+    "images": [
+      "/products/extech-mn16-kit.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "aemc-1060-6505",
+    "name": "AEMC 1060 / 6505 Megohmmeter (1kV to 5kV)",
+    "sku": "PK-0010",
+    "mpn": "1060 / 6505",
+    "brand": "aemc",
+    "category": "electrical-test",
+    "description": "Megohmmeter family covering 1 kV to 5 kV insulation tests.",
+    "specs": {
+      "Type": "Megohmmeter",
+      "Voltage": "1 kV to 5 kV"
+    },
+    "images": [
+      "/products/aemc-1060-6505.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "amprobe-acd-14-pro",
+    "name": "Amprobe ACD-14-PRO Dual Display Clamp Meter",
+    "sku": "PK-0011",
+    "mpn": "ACD-14-PRO",
+    "brand": "amprobe",
+    "category": "electrical-test",
+    "description": "Dual-display clamp meter.",
+    "specs": {
+      "Type": "Clamp meter",
+      "Display": "Dual"
+    },
+    "images": [
+      "/products/amprobe-acd-14-pro.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "tektronix-tbs1000c-tbs2000b",
+    "name": "TBS1000C / TBS2000B Series Digital Storage Oscilloscope",
+    "sku": "PK-0012",
+    "mpn": "TBS1000C / TBS2000B",
+    "brand": "tektronix",
+    "category": "electrical-test",
+    "description": "Digital storage oscilloscope in the TBS1000C and TBS2000B series.",
+    "specs": {
+      "Type": "Digital storage oscilloscope",
+      "Series": "TBS1000C, TBS2000B"
+    },
+    "images": [
+      "/products/tektronix-tbs1000c-tbs2000b.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "wika-232-50-pressure-gauge",
+    "name": "WIKA Model 232.50 / 233.50 SS Pressure Gauge (100 mm, 0–400 bar)",
+    "sku": "PK-0013",
+    "mpn": "232.50 / 233.50",
+    "brand": "wika",
+    "category": "process-instrumentation",
+    "description": "Stainless-steel pressure gauge, 100 mm dial, for ranges up to 0–400 bar.",
+    "specs": {
+      "Type": "Pressure gauge",
+      "Dial size": "100 mm",
+      "Range": "0–400 bar"
+    },
+    "images": [
+      "/products/wika-232-50-pressure-gauge.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "dwyer-2000-magnehelic",
+    "name": "Dwyer Series 2000 Magnehelic Differential Pressure Gauge",
+    "sku": "PK-0014",
+    "mpn": "Series 2000",
+    "brand": "dwyer-instruments",
+    "category": "process-instrumentation",
+    "description": "Magnehelic differential pressure gauge.",
+    "specs": {
+      "Type": "Differential pressure gauge",
+      "Series": "2000 Magnehelic"
+    },
+    "images": [
+      "/products/dwyer-2000-magnehelic.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "rosemount-3051-transmitter",
+    "name": "Rosemount 3051C / 3051S Differential & Pressure Transmitter",
+    "sku": "PK-0015",
+    "mpn": "3051C / 3051S",
+    "brand": "rosemount",
+    "category": "process-instrumentation",
+    "description": "Differential and gauge pressure transmitter in the Rosemount 3051 family.",
+    "specs": {
+      "Type": "Pressure transmitter",
+      "Models": "3051C, 3051S"
+    },
+    "images": [
+      "/products/rosemount-3051-transmitter.avif"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "endress-promag-w400",
+    "name": "Promag W 400 / Promag 50W Electromagnetic Flowmeter",
+    "sku": "PK-0016",
+    "mpn": "Promag W 400 / 50W",
+    "brand": "endress-hauser",
+    "category": "process-instrumentation",
+    "description": "Electromagnetic flowmeter for water and wastewater.",
+    "specs": {
+      "Type": "Electromagnetic flowmeter",
+      "Models": "Promag W 400, Promag 50W"
+    },
+    "images": [
+      "/products/endress-promag-w400.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "yokogawa-eja110e",
+    "name": "DPharp EJA110E Differential Pressure Transmitter",
+    "sku": "PK-0017",
+    "mpn": "EJA110E",
+    "brand": "yokogawa",
+    "category": "process-instrumentation",
+    "description": "Differential pressure transmitter in the DPharp EJA110E series.",
+    "specs": {
+      "Type": "Differential pressure transmitter",
+      "Model": "EJA110E"
+    },
+    "images": [
+      "/products/yokogawa-eja110e.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "ashcroft-1009-1279",
+    "name": "Ashcroft 1009 / 1279 Process Pressure Gauge (Phenolic/SS)",
+    "sku": "PK-0018",
+    "mpn": "1009 / 1279",
+    "brand": "ashcroft",
+    "category": "process-instrumentation",
+    "description": "Process pressure gauge in the Ashcroft 1009 and 1279 families.",
+    "specs": {
+      "Type": "Process pressure gauge",
+      "Models": "1009, 1279"
+    },
+    "images": [
+      "/products/ashcroft-1009-1279.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "keller-33x-21y",
+    "name": "Keller Series 33X / 21Y Piezoresistive Pressure Transmitter",
+    "sku": "PK-0019",
+    "mpn": "33X / 21Y",
+    "brand": "keller",
+    "category": "process-instrumentation",
+    "description": "Piezoresistive pressure transmitter in the Keller 33X and 21Y series.",
+    "specs": {
+      "Type": "Pressure transmitter",
+      "Series": "33X, 21Y"
+    },
+    "images": [
+      "/products/keller-33x-21y.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "gems-ls-7-ls-800",
+    "name": "Gems LS-7 / LS-800 Level Switches & Sensors",
+    "sku": "PK-0020",
+    "mpn": "LS-7 / LS-800",
+    "brand": "gems-sensors",
+    "category": "process-instrumentation",
+    "description": "Single-point level switches and sensors.",
+    "specs": {
+      "Type": "Level switch",
+      "Models": "LS-7, LS-800"
+    },
+    "images": [
+      "https://www.gemssensors.com/images/default-source/updated-product-series-images/single-point/ls-800-5series_172635.jpg?Status=Master&sfvrsn=2885450b_2"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "flowline-echopod-echotouch",
+    "name": "Flowline EchoPod / EchoTouch Ultrasonic Level Transmitter",
+    "sku": "PK-0021",
+    "mpn": "EchoPod / EchoTouch",
+    "brand": "flowline",
+    "category": "process-instrumentation",
+    "description": "Ultrasonic level transmitter in the EchoPod and EchoTouch families.",
+    "specs": {
+      "Type": "Ultrasonic level transmitter",
+      "Models": "EchoPod, EchoTouch"
+    },
+    "images": [
+      "https://supply.coreandmain.com/cdn-cgi/image/background%3Dwhite/i/402109_With%20Fob_4.9%27_1.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "danfoss-kp35-kp36",
+    "name": "Danfoss KP35 / KP36 Industrial Pressure Switch",
+    "sku": "PK-0022",
+    "mpn": "KP35 / KP36",
+    "brand": "danfoss",
+    "category": "process-instrumentation",
+    "description": "Industrial pressure switch in the KP35 and KP36 range.",
+    "specs": {
+      "Type": "Pressure switch",
+      "Models": "KP35, KP36"
+    },
+    "images": [
+      "/products/danfoss-kp35-kp36.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "wilden-pro-flo-aodd",
+    "name": "Wilden Pro-Flo Air-Operated Double-Diaphragm (AODD) Pump",
+    "sku": "PK-0023",
+    "mpn": "Pro-Flo",
+    "brand": "wilden",
+    "category": "process-instrumentation",
+    "description": "Air-operated double-diaphragm pump in the Pro-Flo series.",
+    "specs": {
+      "Type": "AODD pump",
+      "Series": "Pro-Flo"
+    },
+    "images": [
+      "https://store.psgdover.com/content/dam/psg/wilden/product-photos/WIL-04-13863_01.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "siemens-s7-1200-1214c",
+    "name": "SIMATIC S7-1200 CPU 1214C (6ES7214-1AG40 / 1BG40)",
+    "sku": "PK-0024",
+    "mpn": "6ES7214-1AG40 / 1BG40",
+    "brand": "siemens",
+    "category": "industrial-automation",
+    "description": "Compact SIMATIC S7-1200 CPU 1214C.",
+    "specs": {
+      "Type": "PLC CPU",
+      "Series": "S7-1200",
+      "Models": "6ES7214-1AG40, 6ES7214-1BG40"
+    },
+    "images": [
+      "/products/siemens-s7-1200-1214c.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "siemens-sirius-3rt20",
+    "name": "SIRIUS 3RT20 Contactor Series (3RT2015 to 3RT2035)",
+    "sku": "PK-0025",
+    "mpn": "3RT2015–3RT2035",
+    "brand": "siemens",
+    "category": "industrial-automation",
+    "description": "SIRIUS 3RT20 contactor series from 3RT2015 to 3RT2035.",
+    "specs": {
+      "Type": "Contactor",
+      "Series": "SIRIUS 3RT20"
+    },
+    "images": [
+      "/products/siemens-sirius-3rt20.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "schneider-tesys-d",
+    "name": "TeSys D Contactor (LC1D09, LC1D18, LC1D25, LC1D32, LC1D95)",
+    "sku": "PK-0026",
+    "mpn": "LC1D09 / LC1D18 / LC1D25 / LC1D32 / LC1D95",
+    "brand": "schneider-electric",
+    "category": "industrial-automation",
+    "description": "TeSys D contactor family, including LC1D09, LC1D18, LC1D25, LC1D32 and LC1D95.",
+    "specs": {
+      "Type": "Contactor",
+      "Models": "LC1D09, LC1D18, LC1D25, LC1D32, LC1D95"
+    },
+    "images": [
+      "/products/schneider-tesys-d.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "schneider-altivar-atv310-atv610",
+    "name": "Altivar ATV310 / ATV610 Variable Speed Inverter Drives",
+    "sku": "PK-0027",
+    "mpn": "ATV310 / ATV610",
+    "brand": "schneider-electric",
+    "category": "industrial-automation",
+    "description": "Variable-speed inverter drives in the Altivar ATV310 and ATV610 ranges.",
+    "specs": {
+      "Type": "Variable speed drive",
+      "Models": "ATV310, ATV610"
+    },
+    "images": [
+      "/products/schneider-altivar-atv310-atv610.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "abb-acs580",
+    "name": "ABB ACS580 General Purpose Low-Voltage Drive",
+    "sku": "PK-0028",
+    "mpn": "ACS580",
+    "brand": "abb",
+    "category": "industrial-automation",
+    "description": "General-purpose low-voltage variable speed drive.",
+    "specs": {
+      "Type": "Variable speed drive",
+      "Series": "ACS580"
+    },
+    "images": [
+      "/products/abb-acs580.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "allen-bradley-compactlogix-micrologix",
+    "name": "CompactLogix 5069 / MicroLogix 1400 PLC",
+    "sku": "PK-0029",
+    "mpn": "5069 / 1400",
+    "brand": "allen-bradley",
+    "category": "industrial-automation",
+    "description": "Programmable controller in the CompactLogix 5069 and MicroLogix 1400 families.",
+    "specs": {
+      "Type": "PLC",
+      "Models": "CompactLogix 5069, MicroLogix 1400"
+    },
+    "images": [
+      "/products/allen-bradley-compactlogix-micrologix.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "omron-cp1e-cp2e",
+    "name": "Omron CP1E / CP2E Micro PLC & MY2N/MY4N Relays",
+    "sku": "PK-0030",
+    "mpn": "CP1E / CP2E",
+    "brand": "omron",
+    "category": "industrial-automation",
+    "description": "Micro PLC in the CP1E and CP2E series, with MY2N and MY4N relays.",
+    "specs": {
+      "Type": "Micro PLC",
+      "Models": "CP1E, CP2E, MY2N, MY4N"
+    },
+    "images": [
+      "/products/omron-cp1e-cp2e.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "autonics-tc4s-tk4s",
+    "name": "Autonics TC4S / TK4S Digital Temperature Controllers",
+    "sku": "PK-0031",
+    "mpn": "TC4S / TK4S",
+    "brand": "autonics",
+    "category": "industrial-automation",
+    "description": "Digital temperature controllers.",
+    "specs": {
+      "Type": "Temperature controller",
+      "Models": "TC4S, TK4S"
+    },
+    "images": [
+      "/products/autonics-tc4s-tk4s.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "autonics-pr-proximity",
+    "name": "Autonics PR Series Inductive Proximity Sensors (PR12, PR18)",
+    "sku": "PK-0032",
+    "mpn": "PR12 / PR18",
+    "brand": "autonics",
+    "category": "industrial-automation",
+    "description": "Inductive proximity sensors in the PR series.",
+    "specs": {
+      "Type": "Inductive proximity sensor",
+      "Models": "PR12, PR18"
+    },
+    "images": [
+      "/products/autonics-pr-proximity.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "sick-v180-2-wl100",
+    "name": "SICK V180-2 / WL100 Photoelectric & Proximity Sensors",
+    "sku": "PK-0033",
+    "mpn": "V180-2 / WL100",
+    "brand": "sick",
+    "category": "industrial-automation",
+    "description": "Photoelectric and proximity sensors in the V180-2 and WL100 families.",
+    "specs": {
+      "Type": "Photoelectric sensor",
+      "Models": "V180-2, WL100"
+    },
+    "images": [
+      "/products/sick-v180-2-wl100.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "pepperl-fuchs-kfd2",
+    "name": "K-System Isolated Barriers (KFD2-STC4, KFD2-SR2)",
+    "sku": "PK-0034",
+    "mpn": "KFD2-STC4 / KFD2-SR2",
+    "brand": "pepperl-fuchs",
+    "category": "industrial-automation",
+    "description": "Isolated barriers in the K-System range.",
+    "specs": {
+      "Type": "Isolated barrier",
+      "Models": "KFD2-STC4, KFD2-SR2"
+    },
+    "images": [
+      "/products/pepperl-fuchs-kfd2.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "3m-6200-respirator",
+    "name": "3M 6200 Half Facepiece Reusable Respirator",
+    "sku": "PK-0035",
+    "mpn": "6200",
+    "brand": "3m",
+    "category": "ppe-safety",
+    "description": "Half-facepiece reusable respirator.",
+    "specs": {
+      "Type": "Half-face respirator",
+      "Model": "6200"
+    },
+    "images": [
+      "/products/3m-6200-respirator.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "3m-6003-6001-cartridges",
+    "name": "3M 6003 / 6001 Gas & Organic Vapor Cartridges",
+    "sku": "PK-0036",
+    "mpn": "6003 / 6001",
+    "brand": "3m",
+    "category": "ppe-safety",
+    "description": "Gas and organic vapor respirator cartridges.",
+    "specs": {
+      "Type": "Respirator cartridge",
+      "Models": "6003, 6001"
+    },
+    "images": [
+      "/products/3m-6003-6001-cartridges.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "3m-2091-2097-filters",
+    "name": "3M 2091 / 2097 P100 Particulate Filters",
+    "sku": "PK-0037",
+    "mpn": "2091 / 2097",
+    "brand": "3m",
+    "category": "ppe-safety",
+    "description": "P100 particulate filters for reusable respirators.",
+    "specs": {
+      "Type": "Particulate filter",
+      "Rating": "P100",
+      "Models": "2091, 2097"
+    },
+    "images": [
+      "/products/3m-2091-2097-filters.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "draeger-x-am-2500",
+    "name": "Dräger X-am 2500 Portable Multi-Gas Detector",
+    "sku": "PK-0038",
+    "mpn": "X-am 2500",
+    "brand": "draeger",
+    "category": "ppe-safety",
+    "description": "Portable multi-gas detector.",
+    "specs": {
+      "Type": "Multi-gas detector",
+      "Model": "X-am 2500"
+    },
+    "images": [
+      "/products/draeger-x-am-2500.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "msa-v-gard-hard-hat",
+    "name": "MSA V-Gard Industrial Hard Hat (Fas-Trac III Suspension)",
+    "sku": "PK-0039",
+    "mpn": "V-Gard",
+    "brand": "msa-safety",
+    "category": "ppe-safety",
+    "description": "Industrial hard hat with Fas-Trac III suspension.",
+    "specs": {
+      "Type": "Hard hat",
+      "Suspension": "Fas-Trac III"
+    },
+    "images": [
+      "/products/msa-v-gard-hard-hat.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "msa-altair-4xr",
+    "name": "MSA Altair 4XR Multi-Gas Detector (LEL, O2, CO, H2S)",
+    "sku": "PK-0040",
+    "mpn": "Altair 4XR",
+    "brand": "msa-safety",
+    "category": "ppe-safety",
+    "description": "Portable multi-gas detector for LEL, oxygen, carbon monoxide and hydrogen sulfide.",
+    "specs": {
+      "Type": "Multi-gas detector",
+      "Gases": "LEL, O2, CO, H2S"
+    },
+    "images": [
+      "/products/msa-altair-4xr.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "ansell-alphatec-37-175",
+    "name": "AlphaTec (Sol-Vex) 37-175 Nitrile Chemical Gloves",
+    "sku": "PK-0041",
+    "mpn": "37-175",
+    "brand": "ansell",
+    "category": "ppe-safety",
+    "description": "Nitrile chemical-resistant gloves.",
+    "specs": {
+      "Type": "Chemical gloves",
+      "Model": "AlphaTec 37-175"
+    },
+    "images": [
+      "/products/ansell-alphatec-37-175.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "ansell-hyflex-11-800",
+    "name": "HyFlex 11-800 Foam Nitrile Assembly Gloves",
+    "sku": "PK-0042",
+    "mpn": "11-800",
+    "brand": "ansell",
+    "category": "ppe-safety",
+    "description": "Foam nitrile assembly gloves.",
+    "specs": {
+      "Type": "Assembly gloves",
+      "Model": "HyFlex 11-800"
+    },
+    "images": [
+      "/products/ansell-hyflex-11-800.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "honeywell-north-5500-7700",
+    "name": "Honeywell North 5500 / 7700 Half Mask Respirators",
+    "sku": "PK-0043",
+    "mpn": "5500 / 7700",
+    "brand": "honeywell",
+    "category": "ppe-safety",
+    "description": "Half-mask respirators in the North 5500 and 7700 series.",
+    "specs": {
+      "Type": "Half-mask respirator",
+      "Models": "5500, 7700"
+    },
+    "images": [
+      "/products/honeywell-north-5500-7700.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "blue-eagle-np-305",
+    "name": "Blue Eagle NP-305 / NP-306 Half Face Respirators",
+    "sku": "PK-0044",
+    "mpn": "NP-305 / NP-306",
+    "brand": "blue-eagle",
+    "category": "ppe-safety",
+    "description": "Half-face respirators.",
+    "specs": {
+      "Type": "Half-face respirator",
+      "Models": "NP-305, NP-306"
+    },
+    "images": [
+      "/products/blue-eagle-np-305.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "karam-pn112-pn113",
+    "name": "Karam PN112 / PN113 Full Body Fall Arrest Harness",
+    "sku": "PK-0045",
+    "mpn": "PN112 / PN113",
+    "brand": "karam",
+    "category": "ppe-safety",
+    "description": "Full-body fall-arrest harness.",
+    "specs": {
+      "Type": "Fall-arrest harness",
+      "Models": "PN112, PN113"
+    },
+    "images": [
+      "/products/karam-pn112-pn113.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "vaultex-safety-footwear",
+    "name": "Vaultex V-Cut / High-Ankle Steel-Toe Safety Footwear",
+    "sku": "PK-0046",
+    "mpn": "V-Cut",
+    "brand": "vaultex",
+    "category": "ppe-safety",
+    "description": "High-ankle steel-toe safety footwear.",
+    "specs": {
+      "Type": "Safety footwear",
+      "Style": "V-Cut, high ankle"
+    },
+    "images": [
+      "/products/vaultex-safety-footwear.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "dupont-tyvek-400-500",
+    "name": "DuPont Tyvek 400 / 500 Protective Coveralls",
+    "sku": "PK-0047",
+    "mpn": "Tyvek 400 / 500",
+    "brand": "dupont",
+    "category": "ppe-safety",
+    "description": "Protective coveralls in the Tyvek 400 and 500 ranges.",
+    "specs": {
+      "Type": "Protective coverall",
+      "Models": "Tyvek 400, Tyvek 500"
+    },
+    "images": [
+      "/products/dupont-tyvek-400-500.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "bently-nevada-3500",
+    "name": "3500 Series Rack / Modules (3500/05, 3500/22M, 3500/42M)",
+    "sku": "PK-0048",
+    "mpn": "3500/05 / 3500/22M / 3500/42M",
+    "brand": "bently-nevada",
+    "category": "condition-monitoring",
+    "description": "Machinery protection rack and modules.",
+    "specs": {
+      "Type": "Monitoring rack",
+      "Modules": "3500/05, 3500/22M, 3500/42M"
+    },
+    "images": [
+      "/products/bently-nevada-3500.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "bently-nevada-3300-xl",
+    "name": "3300 XL 8 mm Proximity Probes",
+    "sku": "PK-0049",
+    "mpn": "3300 XL 8 mm",
+    "brand": "bently-nevada",
+    "category": "condition-monitoring",
+    "description": "8 mm proximity probes for shaft vibration and position.",
+    "specs": {
+      "Type": "Proximity probe",
+      "Size": "8 mm"
+    },
+    "images": [
+      "/products/bently-nevada-3300-xl.webp"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "additel-adt760",
+    "name": "ADT760 Automated Handheld Pressure Calibrator",
+    "sku": "PK-0050",
+    "mpn": "ADT760",
+    "brand": "additel",
+    "category": "calibrators",
+    "description": "Automated handheld pressure calibrator.",
+    "specs": {
+      "Type": "Pressure calibrator",
+      "Model": "ADT760"
+    },
+    "images": [
+      "https://www.testequipmentdepot.com/media/catalog/product/a/d/adt760_series_e991.jpg?bg-color=255%2C255%2C255&fit=bounds&height=&optimize=high&width="
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "additel-adt761a",
+    "name": "ADT761A Automated Handheld Pressure Calibrator",
+    "sku": "PK-0051",
+    "mpn": "ADT761A",
+    "brand": "additel",
+    "category": "calibrators",
+    "description": "Automated handheld pressure calibrator.",
+    "specs": {
+      "Type": "Pressure calibrator",
+      "Model": "ADT761A"
+    },
+    "images": [
+      "/products/additel-adt761a.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "fluke-9142-dry-well",
+    "name": "Hart Scientific 9142 Field Metrology Dry-Well",
+    "sku": "PK-0052",
+    "mpn": "9142",
+    "brand": "fluke-calibration",
+    "category": "calibrators",
+    "description": "Field metrology dry-well for temperature calibration.",
+    "specs": {
+      "Type": "Dry-well calibrator",
+      "Model": "9142"
+    },
+    "images": [
+      "/products/fluke-9142-dry-well.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "fluke-9144-dry-well",
+    "name": "Hart Scientific 9144 Field Metrology Dry-Well",
+    "sku": "PK-0053",
+    "mpn": "9144",
+    "brand": "fluke-calibration",
+    "category": "calibrators",
+    "description": "Field metrology dry-well for temperature calibration.",
+    "specs": {
+      "Type": "Dry-well calibrator",
+      "Model": "9144"
+    },
+    "images": [
+      "/products/fluke-9144-dry-well.avif"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "druck-dpi-620-genii",
+    "name": "DPI 620 Genii Advanced Modular Calibrator",
+    "sku": "PK-0054",
+    "mpn": "DPI 620 Genii",
+    "brand": "druck",
+    "category": "calibrators",
+    "description": "Advanced modular calibrator.",
+    "specs": {
+      "Type": "Modular calibrator",
+      "Model": "DPI 620 Genii"
+    },
+    "images": [
+      "/products/druck-dpi-620-genii.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "druck-dpi-611",
+    "name": "DPI 611 Advanced Modular Calibrator",
+    "sku": "PK-0055",
+    "mpn": "DPI 611",
+    "brand": "druck",
+    "category": "calibrators",
+    "description": "Advanced modular calibrator.",
+    "specs": {
+      "Type": "Modular calibrator",
+      "Model": "DPI 611"
+    },
+    "images": [
+      "/products/druck-dpi-611.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "keysight-fieldfox-n9918b",
+    "name": "FieldFox N9918B Handheld Microwave Analyzer",
+    "sku": "PK-0056",
+    "mpn": "N9918B",
+    "brand": "keysight",
+    "category": "rf-laboratory",
+    "description": "Handheld microwave analyzer.",
+    "specs": {
+      "Type": "Handheld microwave analyzer",
+      "Model": "N9918B"
+    },
+    "images": [
+      "/products/keysight-fieldfox-n9918b.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "keysight-infiniium",
+    "name": "Infiniium Oscilloscope",
+    "sku": "PK-0057",
+    "mpn": "Infiniium",
+    "brand": "keysight",
+    "category": "rf-laboratory",
+    "description": "Laboratory oscilloscope in the Infiniium family.",
+    "specs": {
+      "Type": "Oscilloscope",
+      "Series": "Infiniium"
+    },
+    "images": [
+      "/products/keysight-infiniium.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "keithley-2450",
+    "name": "2450 SourceMeter (SMU) Instrument",
+    "sku": "PK-0058",
+    "mpn": "2450",
+    "brand": "keithley",
+    "category": "rf-laboratory",
+    "description": "Source measure unit.",
+    "specs": {
+      "Type": "Source measure unit",
+      "Model": "2450"
+    },
+    "images": [
+      "/products/keithley-2450.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "keithley-2600b",
+    "name": "2600B SourceMeter (SMU) Instrument",
+    "sku": "PK-0059",
+    "mpn": "2600B",
+    "brand": "keithley",
+    "category": "rf-laboratory",
+    "description": "Source measure unit in the 2600B series.",
+    "specs": {
+      "Type": "Source measure unit",
+      "Series": "2600B"
+    },
+    "images": [
+      "/products/keithley-2600b.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "micro-motion-elite",
+    "name": "ELITE Series Coriolis Flowmeters (CMFS / CMF300)",
+    "sku": "PK-0060",
+    "mpn": "ELITE CMFS / CMF300",
+    "brand": "micro-motion",
+    "category": "mass-flow",
+    "description": "Coriolis flowmeter in the ELITE series, including CMFS and CMF300 sensors.",
+    "specs": {
+      "Type": "Coriolis flowmeter",
+      "Models": "CMFS, CMF300"
+    },
+    "images": [
+      "/products/micro-motion-elite.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "alicat-mc-mcr",
+    "name": "MC / MCR Series Mass Flow Controllers",
+    "sku": "PK-0061",
+    "mpn": "MC / MCR",
+    "brand": "alicat-scientific",
+    "category": "mass-flow",
+    "description": "Mass flow controllers.",
+    "specs": {
+      "Type": "Mass flow controller",
+      "Series": "MC, MCR"
+    },
+    "images": [
+      "/products/alicat-mc-mcr.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "aalborg-gfc",
+    "name": "GFC Mass Flow Controllers",
+    "sku": "PK-0062",
+    "mpn": "GFC",
+    "brand": "aalborg",
+    "category": "mass-flow",
+    "description": "Mass flow controllers.",
+    "specs": {
+      "Type": "Mass flow controller",
+      "Series": "GFC"
+    },
+    "images": [
+      "/products/aalborg-gfc.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "vaisala-hmt330-dmt340",
+    "name": "HMT330 / DMT340 Dew Point and Moisture-in-Oil Transmitters",
+    "sku": "PK-0063",
+    "mpn": "HMT330 / DMT340",
+    "brand": "vaisala",
+    "category": "analytical-sensors",
+    "description": "Dew-point and moisture-in-oil transmitters.",
+    "specs": {
+      "Type": "Moisture transmitter",
+      "Models": "HMT330, DMT340"
+    },
+    "images": [
+      "/products/vaisala-hmt330-dmt340.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "panametrics-moisture-iq",
+    "name": "moisture.IQ / flare.IQ Ultrasonic Flare Gas Meters",
+    "sku": "PK-0064",
+    "mpn": "moisture.IQ / flare.IQ",
+    "brand": "panametrics",
+    "category": "analytical-sensors",
+    "description": "Moisture analyzer and ultrasonic flare-gas measurement.",
+    "specs": {
+      "Type": "Analytical instrument",
+      "Models": "moisture.IQ, flare.IQ"
+    },
+    "images": [
+      "/products/panametrics-moisture-iq.jpg"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "rosemount-ocx8800",
+    "name": "OCX8800 Oxygen/Combustibles Transmitter",
+    "sku": "PK-0065",
+    "mpn": "OCX8800",
+    "brand": "rosemount-analytical",
+    "category": "analytical-sensors",
+    "description": "Oxygen and combustibles transmitter.",
+    "specs": {
+      "Type": "Oxygen/combustibles transmitter",
+      "Model": "OCX8800"
+    },
+    "images": [
+      "/products/rosemount-ocx8800.png"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "rae-arearae-plus",
+    "name": "AreaRAE Plus / Pro Transportable Multi-Threat Monitors",
+    "sku": "PK-0066",
+    "mpn": "AreaRAE Plus / Pro",
+    "brand": "rae-systems",
+    "category": "remote-inspection",
+    "description": "Transportable multi-threat area monitor.",
+    "specs": {
+      "Type": "Area monitor",
+      "Models": "AreaRAE Plus, AreaRAE Pro"
+    },
+    "images": [
+      "/products/rae-arearae-plus.avif"
+    ],
+    "datasheets": []
+  },
+  {
+    "slug": "waygate-mentor-visual-iq",
+    "name": "Mentor Visual iQ Industrial Video Borescope",
+    "sku": "PK-0067",
+    "mpn": "Mentor Visual iQ",
+    "brand": "waygate-technologies",
+    "category": "remote-inspection",
+    "description": "Industrial video borescope for remote visual inspection.",
+    "specs": {
+      "Type": "Video borescope",
+      "Model": "Mentor Visual iQ"
+    },
+    "images": [
+      "/products/waygate-mentor-visual-iq.png"
+    ],
+    "datasheets": []
+  }
+]
