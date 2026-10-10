@@ -1,104 +1,97 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { ArrowRightIcon } from "@/components/icons";
+import {
+  ActivityIcon,
+  CpuIcon,
+  DropletsIcon,
+  FlaskIcon,
+  GaugeIcon,
+  RadioIcon,
+  ScanIcon,
+  ShieldIcon,
+  ThermometerIcon,
+  ZapIcon,
+} from "@/components/icons";
 import { SearchBar } from "@/components/layout/SearchBar";
-import { BrandMark } from "@/components/product/BrandMark";
+import { BrandCarousel } from "@/components/product/BrandCarousel";
 import { ProductImage } from "@/components/product/ProductImage";
 import { AddToQuoteButton } from "@/components/quote/AddToQuoteButton";
-import { buttonClass, Container, SectionHeading } from "@/components/shared";
+import { buttonClass, Container } from "@/components/shared";
 import { brandName, brands, categoryHref, products, productsInCategory, topCategories } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 
 export default function HomePage() {
   const featured = products.slice(0, 6);
+  const departments = topCategories();
 
   return (
     <>
-      <section className="border-b border-border bg-white">
-        <Container className="grid items-center gap-10 py-12 lg:grid-cols-[1.25fr_0.85fr] lg:py-16">
+      <section className="bg-navy text-white">
+        <div className="mx-auto grid w-full max-w-6xl items-start gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,24rem)] lg:py-16">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.22em] text-blue">Precision Core Supply</p>
-            <h1 className="mt-3 max-w-xl text-4xl font-semibold tracking-tight text-navy sm:text-5xl">
-              Measuring tools, quoted by part number.
+            <h1 className="max-w-2xl text-4xl leading-[1.1] text-white sm:text-5xl">
+              The part number is enough.
             </h1>
-            <span className="mt-5 block h-1 w-16 bg-gold" aria-hidden />
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground">
-              {siteConfig.description} Search the catalogue, or send the part number and we will import it.
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/70">
+              {siteConfig.description} Search the catalogue, or send the number and we will import it.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/products" className={buttonClass("default", "default", "bg-gold text-navy hover:bg-gold/90")}>
-                Browse products
+            <SearchBar size="lg" id="hero-search" tone="on-dark" className="mt-7 max-w-xl" />
+            <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-[15px]">
+              <Link href="/products" className="font-medium text-white underline underline-offset-4">
+                Browse catalogue
               </Link>
-              <Link href="/source" className={buttonClass("outline")}>
+              <Link href="/source" className="text-white/75 hover:text-white">
                 Source a part
               </Link>
             </div>
+            <p className="mt-8 text-sm text-white/45">
+              {products.length} products · {brands.length} brands · {departments.length} departments
+            </p>
           </div>
-
-          <div className="bg-navy p-5 text-white sm:p-7">
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Find a part</p>
-            <p className="mt-2 text-lg font-semibold">Search the catalogue</p>
-            <div className="mt-4">
-              <SearchBar size="lg" id="hero-search" tone="on-dark" />
-            </div>
-            <dl className="mt-6 grid grid-cols-3 gap-3 border-t border-white/15 pt-5">
-              <div>
-                <dt className="font-mono text-[11px] uppercase text-white/55">Products</dt>
-                <dd className="mt-1 text-2xl font-semibold">{products.length}</dd>
-              </div>
-              <div>
-                <dt className="font-mono text-[11px] uppercase text-white/55">Brands</dt>
-                <dd className="mt-1 text-2xl font-semibold">{brands.length}</dd>
-              </div>
-              <div>
-                <dt className="font-mono text-[11px] uppercase text-white/55">Categories</dt>
-                <dd className="mt-1 text-2xl font-semibold">{topCategories().length}</dd>
-              </div>
-            </dl>
-          </div>
-        </Container>
+          <ContactForm compact className="w-full" />
+        </div>
       </section>
 
-      <section>
-        <Container className="py-12 lg:py-16">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-            <div className="max-w-xl">
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-blue">Catalogue</p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight text-navy">Shop by category</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Choose a department. Each card shows what it covers and how many parts are ready to quote.
+      <section className="bg-white">
+        <Container className="py-16 lg:py-20">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 className="text-3xl text-navy">Departments</h2>
+              <p className="mt-2 max-w-lg text-sm text-navy/60">
+                Browse by the bench you work on. Each department opens the parts we quote most often.
               </p>
             </div>
-            <Link href="/products" className={buttonClass("outline")}>
+            <Link href="/products" className="text-sm font-medium text-gold hover:underline">
               All products
-              <ArrowRightIcon width={16} height={16} />
             </Link>
           </div>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {topCategories().map((c, i) => {
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {departments.map((c) => {
               const count = productsInCategory(c.slug).length;
+              const Icon = departmentIcon(c.slug);
               return (
                 <li key={c.slug}>
                   <Link
                     href={categoryHref(c.slug)}
-                    className="group flex h-full flex-col bg-white p-5 ring-1 ring-border transition hover:ring-gold"
+                    className="group flex h-full flex-col bg-[#eef1f5] p-5 transition hover:bg-navy hover:text-white"
                   >
-                    <div className="flex items-center justify-between gap-3">
-                      <span className="grid size-9 place-items-center bg-navy font-mono text-xs text-gold">
-                        {String(i + 1).padStart(2, "0")}
+                    <div className="flex items-start justify-between gap-3">
+                      <span className="grid size-11 place-items-center bg-white text-gold group-hover:bg-gold group-hover:text-navy">
+                        <Icon width={22} height={22} strokeWidth={1.75} />
                       </span>
-                      <span className="font-mono text-xs text-blue">
-                        {count} {count === 1 ? "product" : "products"}
+                      <span className="font-mono text-xs text-navy/45 group-hover:text-gold">
+                        {count} {count === 1 ? "part" : "parts"}
                       </span>
                     </div>
-                    <h3 className="mt-4 text-lg font-semibold text-navy group-hover:text-blue">
+                    <h3 className="mt-5 font-sans text-lg font-semibold text-navy group-hover:text-white">
                       {c.shortName ?? c.name}
                     </h3>
-                    <p className="mt-1 flex-1 text-sm leading-relaxed text-muted-foreground">{c.description}</p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy group-hover:text-blue">
-                      Open category
-                      <ArrowRightIcon width={16} height={16} className="transition group-hover:translate-x-0.5" />
+                    <p className="mt-1.5 flex-1 text-sm leading-relaxed text-navy/60 group-hover:text-white/70">
+                      {c.description}
+                    </p>
+                    <span className="mt-5 text-sm font-medium text-gold">
+                      View products
                     </span>
                   </Link>
                 </li>
@@ -108,143 +101,117 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="border-y border-border bg-white">
+      <section className="bg-white">
         <Container className="py-12 lg:py-16">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-            <div className="max-w-xl">
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-blue">Featured</p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight text-navy">On the bench</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Six parts kept in front of the desk. Open a card for specifications, or add it straight to a quote.
-              </p>
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 className="text-3xl text-navy">In the catalogue</h2>
+              <p className="mt-1 text-sm text-navy/60">A short list of parts ready to quote.</p>
             </div>
-            <Link href="/products" className={buttonClass("outline")}>
-              View all products
-              <ArrowRightIcon width={16} height={16} />
+            <Link href="/products" className="text-sm font-medium text-gold hover:underline">
+              View all
             </Link>
           </div>
-          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((product) => (
-              <li key={product.slug} className="h-full">
-                <BenchCard product={product} />
+              <li key={product.slug}>
+                <CatalogueCard product={product} />
               </li>
             ))}
           </ul>
         </Container>
       </section>
 
-      <section>
-        <Container className="py-12 lg:py-16">
-          <div className="grid overflow-hidden border border-border lg:grid-cols-2">
-            <div className="bg-navy p-8 text-white lg:p-12">
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-gold">Import</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight">Not listed? We can bring it in.</h2>
-              <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">{siteConfig.sourcing.intro}</p>
-              <Link href="/source" className={buttonClass("default", "default", "mt-6 bg-gold text-navy hover:bg-gold/90")}>
-                Send a sourcing request
-              </Link>
-            </div>
-            <ol className="divide-y divide-border bg-card">
-              {siteConfig.sourcing.steps.map((s, i) => (
-                <li key={s.title} className="grid grid-cols-[auto_1fr] gap-4 p-6 sm:p-8">
-                  <span className="font-mono text-2xl text-gold">{String(i + 1).padStart(2, "0")}</span>
-                  <div>
-                    <h3 className="font-semibold text-navy">{s.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </Container>
-      </section>
-
-      <section className="border-y border-border bg-white">
-        <Container className="py-12 lg:py-16">
-          <SectionHeading
-            title="Brands on the wall"
-            intro="If a manufacturer is missing, send the part number and we will look for it."
-            action={
-              <Link href="/brands" className="text-sm font-semibold text-blue hover:underline">
-                All brands
-              </Link>
-            }
-          />
-          <ul className="grid grid-cols-2 border-l border-t border-border sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-            {brands.slice(0, 18).map((b) => (
-              <li key={b.slug} className="border-r border-b border-border">
-                <Link href={`/brands/${b.slug}`} className="flex h-full flex-col items-center gap-2 px-3 py-4 hover:bg-muted">
-                  <span className="flex h-8 items-center justify-center">
-                    <BrandMark brand={b} />
-                  </span>
-                  <span className="block w-full truncate text-center text-xs text-muted-foreground">{b.name}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
-
-      <section>
-        <Container className="grid items-start gap-10 py-12 lg:grid-cols-[0.8fr_1.2fr] lg:py-16">
+      <section className="bg-navy text-white">
+        <Container className="grid gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-20">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-blue">Desk</p>
-            <h2 className="mt-2 text-3xl font-semibold tracking-tight text-navy">Ask for a part</h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Quotes, sourcing and general questions come to the same desk. We usually reply within one business day.
-            </p>
-            <dl className="mt-6 space-y-2 text-sm">
-              {siteConfig.hours.map((h) => (
-                <div key={h.days} className="flex justify-between gap-4 border-b border-border py-2">
-                  <dt className="text-muted-foreground">{h.days}</dt>
-                  <dd className="font-medium text-navy">{h.time}</dd>
-                </div>
-              ))}
-            </dl>
+            <h2 className="max-w-md text-3xl text-white sm:text-4xl">If it is not listed, send the number.</h2>
+            <p className="mt-4 max-w-md text-[15px] leading-relaxed text-white/65">{siteConfig.sourcing.intro}</p>
+            <Link href="/source" className={buttonClass("light", "default", "mt-7")}>
+              Request a source
+            </Link>
           </div>
-          <ContactForm />
+          <ol className="space-y-6">
+            {siteConfig.sourcing.steps.map((s) => (
+              <li key={s.title}>
+                <h3 className="font-sans text-base font-medium text-white">{s.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-white/60">{s.text}</p>
+              </li>
+            ))}
+          </ol>
         </Container>
+      </section>
+
+      <section className="overflow-hidden bg-white py-16 lg:py-20">
+        <Container className="mb-10 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <h2 className="text-3xl text-navy">Brands we supply</h2>
+            <p className="mt-2 max-w-lg text-sm text-navy/60">
+              Genuine parts from the manufacturers plants already specify. If yours is missing, send the number.
+            </p>
+          </div>
+          <Link href="/brands" className="text-sm font-medium text-gold hover:underline">
+            All brands
+          </Link>
+        </Container>
+        <div className="space-y-8">
+          <BrandCarousel brands={brands.slice(0, Math.ceil(brands.length / 2))} />
+          <BrandCarousel brands={brands.slice(Math.ceil(brands.length / 2))} reverse />
+        </div>
       </section>
     </>
   );
 }
 
-function BenchCard({ product }: { product: Product }) {
+const departmentIcons = {
+  "electrical-test": ZapIcon,
+  "process-instrumentation": GaugeIcon,
+  "industrial-automation": CpuIcon,
+  "ppe-safety": ShieldIcon,
+  "condition-monitoring": ActivityIcon,
+  calibrators: ThermometerIcon,
+  "rf-laboratory": RadioIcon,
+  "mass-flow": DropletsIcon,
+  "analytical-sensors": FlaskIcon,
+  "remote-inspection": ScanIcon,
+} as const;
+
+function departmentIcon(slug: string) {
+  return departmentIcons[slug as keyof typeof departmentIcons] ?? GaugeIcon;
+}
+
+function CatalogueCard({ product }: { product: Product }) {
   const href = `/products/${product.slug}`;
   const brand = brandName(product.brand);
-  const specs = Object.entries(product.specs).slice(0, 2);
+  const spec = Object.entries(product.specs)[0];
 
   return (
-    <article className="flex h-full flex-col bg-card ring-1 ring-border transition hover:ring-gold">
-      <div className="h-1 bg-gold" aria-hidden />
-      <Link href={href} tabIndex={-1} aria-hidden="true" className="block bg-[#f6f8fa]">
+    <article className="flex h-full flex-col bg-[#eef1f5] transition hover:bg-[#e6eaef]">
+      <Link href={href} className="block bg-white">
         <ProductImage
           src={product.images[0]}
           alt={product.name}
           brand={brand}
-          frame="card"
+          frame="wide"
           sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 360px"
         />
       </Link>
       <div className="flex flex-1 flex-col p-4">
-        <p className="text-xs font-semibold tracking-wide text-blue uppercase">{brand}</p>
-        <h3 className="mt-1 text-base leading-snug font-semibold text-navy">
-          <Link href={href} className="hover:text-blue">
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-xs font-medium text-gold">{brand}</p>
+          <p className="font-mono text-[11px] text-navy/40">{product.mpn}</p>
+        </div>
+        <h3 className="mt-1.5 line-clamp-2 font-sans text-[15px] font-semibold leading-snug text-navy">
+          <Link href={href} className="hover:text-gold">
             {product.name}
           </Link>
         </h3>
-        <p className="mt-2 font-mono text-xs text-muted-foreground">{product.mpn}</p>
-        {specs.length > 0 && (
-          <dl className="mt-3 space-y-1 border-t border-border pt-3 text-xs">
-            {specs.map(([key, value]) => (
-              <div key={key} className="flex justify-between gap-3">
-                <dt className="text-muted-foreground">{key}</dt>
-                <dd className="text-right font-medium text-navy">{value}</dd>
-              </div>
-            ))}
-          </dl>
+        {spec && (
+          <p className="mt-2 text-xs text-navy/50">
+            {spec[0]} · {spec[1]}
+          </p>
         )}
-        <div className="mt-auto pt-4">
+        <div className="mt-auto pt-3">
           <AddToQuoteButton product={product} size="sm" />
         </div>
       </div>

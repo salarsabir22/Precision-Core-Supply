@@ -22,9 +22,8 @@ export function ProductCard({
 
   if (layout === "grid") {
     return (
-      <article className="flex h-full flex-col border border-border bg-card">
-        <div className="h-1 bg-gold" aria-hidden />
-        <p className="px-4 pt-3 font-mono text-[11px] tracking-wide text-blue">{product.mpn}</p>
+      <article className="flex h-full flex-col bg-card">
+        <p className="px-4 pt-3 font-mono text-[11px] text-navy/50">{product.mpn}</p>
         <Link href={href} tabIndex={-1} aria-hidden="true" className="block">
           <ProductImage
             src={product.images[0]}
@@ -61,7 +60,7 @@ export function ProductCard({
   }
 
   return (
-    <article className="grid grid-cols-[4.75rem_1fr] items-center gap-4 border border-border border-l-4 border-l-gold bg-card p-3 sm:grid-cols-[5.5rem_1fr_auto] sm:p-4">
+    <article className="grid grid-cols-[4.75rem_1fr] items-center gap-4 bg-card p-3 sm:grid-cols-[5.5rem_1fr_auto] sm:p-4">
       <Link href={href} tabIndex={-1} aria-hidden="true" className="block">
         <ProductImage
           src={product.images[0]}
@@ -73,7 +72,7 @@ export function ProductCard({
         />
       </Link>
       <div className="min-w-0">
-        <p className="font-mono text-[11px] text-blue">{product.mpn}</p>
+        <p className="font-mono text-[11px] text-navy/50">{product.mpn}</p>
         <h3 className="mt-0.5 text-sm leading-snug font-medium">
           <Link href={href} className="hover:underline">
             {product.name}

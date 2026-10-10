@@ -93,7 +93,7 @@ export function CatalogView({
               href={hrefFor(pathname, catalogSearchParams(filters, { ...preserve }))}
               className={cn(
                 "inline-flex h-9 items-center gap-1.5 px-3 text-sm",
-                view === "grid" ? "bg-gold text-navy" : "text-navy hover:bg-muted",
+                view === "grid" ? "bg-navy text-white" : "text-navy hover:bg-muted",
               )}
               aria-current={view === "grid" ? "page" : undefined}
             >
@@ -104,7 +104,7 @@ export function CatalogView({
               href={hrefFor(pathname, catalogSearchParams(filters, { ...preserve, view: "list" }))}
               className={cn(
                 "inline-flex h-9 items-center gap-1.5 border-l border-border px-3 text-sm",
-                view === "list" ? "bg-gold text-navy" : "text-navy hover:bg-muted",
+                view === "list" ? "bg-navy text-white" : "text-navy hover:bg-muted",
               )}
               aria-current={view === "list" ? "page" : undefined}
             >

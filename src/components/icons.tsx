@@ -3,12 +3,17 @@
  * Lucide has no WhatsApp brand glyph, so a chat bubble is used.
  */
 export {
+  Activity as ActivityIcon,
   ArrowRight as ArrowRightIcon,
   Check as CheckIcon,
   ChevronDown as ChevronDownIcon,
   ChevronLeft as ChevronLeftIcon,
   ChevronRight as ChevronRightIcon,
+  Cpu as CpuIcon,
   Download as DownloadIcon,
+  Droplets as DropletsIcon,
+  FlaskConical as FlaskIcon,
+  Gauge as GaugeIcon,
   LayoutGrid as GridIcon,
   Globe as GlobeIcon,
   List as ListIcon,
@@ -19,10 +24,14 @@ export {
   Paperclip as PaperclipIcon,
   Phone as PhoneIcon,
   Plus as PlusIcon,
+  Radio as RadioIcon,
+  ScanEye as ScanIcon,
   Search as SearchIcon,
   Settings as GearIcon,
   ShieldCheck as ShieldIcon,
   ShoppingCart as BasketIcon,
+  Thermometer as ThermometerIcon,
   Trash2 as TrashIcon,
   X as CloseIcon,
+  Zap as ZapIcon,
 } from "lucide-react";

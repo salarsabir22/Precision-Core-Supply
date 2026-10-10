@@ -12,59 +12,59 @@ export function Header() {
   const tel = siteConfig.contact.landline.replace(/[^\d+]/g, "");
 
   return (
-    <header className="sticky top-0 z-30 bg-white">
-      <div className="bg-navy text-white">
-        <div className="mx-auto flex h-9 w-full max-w-7xl items-center justify-between gap-4 px-4 text-xs sm:px-6 lg:px-8">
-          <p className="truncate tracking-wide text-white/80">{siteConfig.tagline}</p>
+    <header className="sticky top-0 z-30">
+      <div className="bg-gold text-navy">
+        <div className="mx-auto flex h-9 w-full max-w-6xl items-center justify-between gap-4 px-5 text-xs font-medium sm:px-8">
+          <p className="truncate">{siteConfig.tagline}</p>
           <div className="hidden shrink-0 items-center gap-4 sm:flex">
-            <a href={`tel:${tel}`} className="hover:text-gold">
+            <a href={`tel:${tel}`} className="hover:underline">
               {siteConfig.contact.landline}
             </a>
-            <a href={`mailto:${siteConfig.contact.publicEmail}`} className="hover:text-gold">
+            <a href={`mailto:${siteConfig.contact.publicEmail}`} className="hover:underline">
               {siteConfig.contact.publicEmail}
             </a>
           </div>
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-[4.25rem] items-center gap-3 lg:gap-5">
-          <Logo className="h-10 sm:h-12" />
-          <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
+      <div className="border-b border-border bg-white">
+        <div className="mx-auto grid h-16 w-full max-w-6xl grid-cols-[1fr_auto] items-center gap-4 px-5 sm:h-[4.25rem] sm:px-8 lg:grid-cols-[1fr_auto_1fr]">
+          <div className="justify-self-start">
+            <Logo className="h-9 sm:h-11" />
+          </div>
+          <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
             {NAV_LINKS.map((l) => (
-              <Link key={l.href} href={l.href} className="px-2.5 py-2 text-sm text-navy hover:text-blue">
+              <Link key={l.href} href={l.href} className="text-[15px] text-navy hover:text-gold">
                 {l.label}
               </Link>
             ))}
-            <Link href="/source" className="px-2.5 py-2 text-sm font-semibold text-blue hover:underline">
+            <Link href="/source" className="text-[15px] font-medium text-gold hover:underline">
               Source
             </Link>
           </nav>
-          <div className="ml-auto hidden min-w-0 flex-1 md:block md:max-w-xs xl:max-w-sm">
-            <SearchBar id="site-search" />
+          <div className="flex items-center justify-end gap-3">
+            <div className="hidden min-w-0 w-full max-w-md md:block">
+              <SearchBar id="site-search" />
+            </div>
+            <QuoteLink />
+            <MobileNav links={mobileLinks} categories={categories} />
           </div>
-          <QuoteLink />
-          <MobileNav links={mobileLinks} categories={categories} />
         </div>
-        <div className="pb-3 md:hidden">
+        <div className="px-5 pb-3 md:hidden">
           <SearchBar id="site-search-mobile" />
         </div>
       </div>
 
-      <nav aria-label="Categories" className="border-t border-border bg-background">
-        <div className="mx-auto flex w-full max-w-7xl flex-wrap gap-2 px-4 py-2 sm:px-6 lg:px-8">
+      <nav aria-label="Categories" className="hidden bg-navy md:block">
+        <div className="mx-auto flex w-full max-w-6xl flex-wrap gap-x-5 gap-y-1 px-5 py-2.5 text-[13px] sm:px-8">
           {topCategories().map((c) => (
-            <Link
-              key={c.slug}
-              href={categoryHref(c.slug)}
-              className="bg-white px-3 py-1.5 text-[13px] text-navy hover:text-blue"
-            >
+            <Link key={c.slug} href={categoryHref(c.slug)} className="text-white/75 hover:text-gold">
               {c.shortName ?? c.name}
             </Link>
           ))}
         </div>
       </nav>
-      <div className="h-[3px] bg-gold" aria-hidden />
+      <div className="h-1 bg-gold" aria-hidden />
     </header>
   );
 }

@@ -22,11 +22,11 @@ export default async function ProductsPage({
     <Container className="py-8">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Products" }]} />
       <PageHeader title="Products" intro="Filter by brand, category or specification, then add items to a quote." />
-      <nav aria-label="Departments" className="mb-6 flex flex-wrap gap-2">
+      <nav aria-label="Departments" className="mb-8 flex flex-wrap gap-x-5 gap-y-2 text-sm">
         {topCategories().map((c) => (
-          <Link key={c.slug} href={categoryHref(c.slug)} className="bg-card px-3 py-2 text-sm text-navy hover:text-blue">
+          <Link key={c.slug} href={categoryHref(c.slug)} className="text-navy/70 hover:text-navy">
             {c.shortName ?? c.name}
-            <span className="ml-2 font-mono text-xs text-blue">{productsInCategory(c.slug).length}</span>
+            <span className="ml-1.5 font-mono text-xs text-navy/40">{productsInCategory(c.slug).length}</span>
           </Link>
         ))}
       </nav>

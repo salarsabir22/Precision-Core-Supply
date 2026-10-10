@@ -22,7 +22,7 @@ export const buttonClass = (variant: ButtonVariant = "default", size: ButtonSize
   cn(buttonVariants({ variant, size }), extra);
 
 export function Container({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={cn("mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8", className)}>{children}</div>;
+  return <div className={cn("mx-auto w-full max-w-6xl px-5 sm:px-8", className)}>{children}</div>;
 }
 
 export function PageHeader({
@@ -35,9 +35,9 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <header className="mb-8 border-l-4 border-gold bg-card px-5 py-5 sm:px-6">
-      <h1 className="text-3xl font-semibold tracking-tight text-navy">{title}</h1>
-      {intro && <p className="mt-2 max-w-2xl text-muted-foreground">{intro}</p>}
+    <header className="mb-10 max-w-2xl">
+      <h1 className="text-3xl text-navy sm:text-4xl">{title}</h1>
+      {intro && <p className="mt-3 text-[17px] leading-relaxed text-muted-foreground">{intro}</p>}
       {children}
     </header>
   );
@@ -74,11 +74,10 @@ export function SectionHeading({
   action?: ReactNode;
 }) {
   return (
-    <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
-      <div>
-        <p className="mb-2 h-1 w-10 bg-gold" aria-hidden />
-        <h2 className="text-2xl font-semibold tracking-tight text-navy">{title}</h2>
-        {intro && <p className="mt-1 max-w-xl text-sm text-muted-foreground">{intro}</p>}
+    <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div className="max-w-xl">
+        <h2 className="text-2xl text-navy sm:text-3xl">{title}</h2>
+        {intro && <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{intro}</p>}
       </div>
       {action}
     </div>

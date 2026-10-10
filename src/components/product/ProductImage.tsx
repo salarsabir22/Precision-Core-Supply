@@ -19,8 +19,8 @@ export function ProductImage({
   alt: string;
   brand?: string;
   className?: string;
-  /** `card` is a wide frame for grids. `square` is the product page photo. */
-  frame?: "card" | "square";
+  /** `card` is a wide frame for grids. `wide` is shorter. `square` is the product page photo. */
+  frame?: "card" | "square" | "wide";
   sizes?: string;
   preload?: boolean;
 }) {
@@ -31,7 +31,7 @@ export function ProductImage({
     <div
       className={cn(
         "relative overflow-hidden",
-        frame === "square" ? "aspect-square" : "aspect-[5/4]",
+        frame === "square" ? "aspect-square" : frame === "wide" ? "aspect-[16/10]" : "aspect-[5/4]",
         photo ? "bg-white" : "grid place-items-center bg-muted",
         className,
       )}

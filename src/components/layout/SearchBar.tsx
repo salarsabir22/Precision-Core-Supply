@@ -37,18 +37,16 @@ export function SearchBar({
         className={cn(
           "rounded-r-none border-r-0 text-base",
           lg ? "h-12 px-4" : "h-10 md:text-sm",
-          onDark ? "border-transparent bg-white text-navy placeholder:text-muted-foreground" : "bg-card",
+          onDark
+            ? "border-transparent bg-white text-navy placeholder:text-muted-foreground"
+            : "rounded-l-md border-navy/15 bg-white",
         )}
       />
       <Button
         type="submit"
         variant="default"
         size={lg ? "lg" : "default"}
-        className={cn(
-          "rounded-l-none",
-          lg ? "h-12 px-5" : "h-10",
-          onDark ? "bg-gold text-navy hover:bg-gold/90" : "bg-blue text-white hover:bg-blue/90",
-        )}
+        className={cn("rounded-l-none rounded-r-md bg-gold text-navy hover:bg-gold/90", lg ? "h-12 px-5" : "h-10")}
       >
         <SearchIcon size={18} />
         <span className={lg ? "" : "sr-only sm:not-sr-only"}>Search</span>

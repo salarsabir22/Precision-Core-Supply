@@ -120,7 +120,7 @@ export function FilterBar({ facets, filters, pathname, preserve = {}, showCatego
   );
 
   return (
-    <aside aria-label="Filters" className="lg:sticky lg:top-40 lg:w-64 lg:shrink-0">
+    <aside aria-label="Filters" className="lg:sticky lg:top-32 lg:w-64 lg:shrink-0">
       {/* Mobile: filters live in a slide-over sheet */}
       <div className="lg:hidden">
         <Sheet>

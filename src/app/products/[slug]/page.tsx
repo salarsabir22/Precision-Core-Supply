@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: Props) {
       />
 
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(16rem,22rem)]">
-        <div className="order-1 space-y-3 lg:order-2 lg:sticky lg:top-40">
+        <div className="order-1 space-y-3 lg:sticky lg:top-32 lg:order-2">
           <ProductImage
             src={product.images[0]}
             alt={product.name}
@@ -88,9 +88,9 @@ export default async function ProductPage({ params }: Props) {
           )}
         </div>
 
-        <div className="order-2 border-l-4 border-gold bg-card px-5 py-6 sm:px-6 lg:order-1">
+        <div className="order-2 lg:order-1">
           <div>
-            <p className="font-mono text-xs text-blue">{product.mpn}</p>
+            <p className="font-mono text-xs text-navy/50">{product.mpn}</p>
             <p className="mt-1 text-sm text-muted-foreground">
               <Link href={`/brands/${product.brand}`} className="hover:underline">
                 {brand?.name ?? product.brand}

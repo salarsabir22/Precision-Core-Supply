@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono, Inter } from "next/font/google";
+import { IBM_Plex_Mono, Poppins } from "next/font/google";
 import { siteConfig } from "@/config/site";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
@@ -8,15 +8,16 @@ import { QuoteProvider } from "@/components/quote/QuoteProvider";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
-const sans = Inter({
-  variable: "--font-inter",
+const sans = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const mono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#1C2630",
+  themeColor: "#F46924",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

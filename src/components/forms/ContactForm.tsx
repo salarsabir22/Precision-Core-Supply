@@ -38,10 +38,10 @@ export function ContactForm({
       }}
       className={cn("relative", className)}
     >
-      <Card className="gap-0 rounded-none border-border py-0 text-card-foreground shadow-none">
-        <CardContent className="space-y-5 px-5 py-6 sm:px-7 sm:py-7">
+      <Card className="gap-0 rounded-lg border-border bg-white py-0 text-card-foreground shadow-sm">
+        <CardContent className="space-y-5 px-5 py-6 sm:px-7 sm:py-8">
           <div>
-            <h2 className={cn("font-medium text-navy", compact ? "text-lg" : "text-xl")}>Send a message</h2>
+            <h2 className={cn("text-navy", compact ? "text-xl" : "text-2xl")}>Send a message</h2>
             <p className="mt-1 text-sm text-muted-foreground">
               {compact
                 ? "Part enquiry or question? We reply within one business day."

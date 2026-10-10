@@ -8,7 +8,7 @@
 /*
  * Brand tokens from the Precision Core Supply logo:
  * navy #1C2630, orange #F46924, blue #29669D.
- * `--gold` is the orange accent (the gauge arc and the rule under the wordmark).
+ * Orange is reserved for the quote action, not used as decoration.
  */
 :root {
   color-scheme: light;
@@ -16,11 +16,10 @@
   --navy: #1c2630;
   --gold: #f46924;
   --blue: #29669d;
-  /* Same blue, lightened so it stays readable on the navy hero. */
   --blue-on-dark: #b7d4ec;
-  --slate: #6a6e71;
+  --slate: #5e646b;
 
-  --background: #eef1f4;
+  --background: #eef1f5;
   --foreground: #1c2630;
   --card: #ffffff;
   --card-foreground: #1c2630;
@@ -29,21 +28,21 @@
 
   --primary: #1c2630;
   --primary-foreground: #ffffff;
-  --secondary: #f4f5f6;
+  --secondary: #f4f6f8;
   --secondary-foreground: #1c2630;
-  --muted: #f4f5f6;
-  --muted-foreground: #6a6e71;
+  --muted: #f4f6f8;
+  --muted-foreground: #5e646b;
   --accent: #eef3f7;
-  --accent-foreground: #29669d;
+  --accent-foreground: #1c2630;
   --destructive: #9f2a2a;
 
-  --border: #e3e6ea;
+  --border: #e4e7eb;
   --input: #c8ced6;
-  --ring: #29669d;
-  --radius: 0.3rem;
+  --ring: #1c2630;
+  --radius: 0.5rem;
 
   --charcoal: #1c2630;
-  --charcoal-foreground: #f4f5f6;
+  --charcoal-foreground: #f4f6f8;
   --ink: #1c2630;
   --success: #1f6b5a;
   --whatsapp: #128c7e;
@@ -82,9 +81,9 @@
   --color-whatsapp: var(--whatsapp);
   --color-teal: var(--teal);
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
-  --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -101,16 +100,44 @@
   }
   html {
     @apply font-sans;
-    scroll-padding-top: 11rem;
+    scroll-padding-top: 7.5rem;
   }
   body {
     @apply bg-background text-foreground;
   }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@keyframes brand-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-brand-marquee {
+  animation: brand-marquee 180s linear infinite;
+}
+
+.animate-brand-marquee-reverse {
+  animation: brand-marquee 200s linear infinite reverse;
 }
 
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+  .animate-brand-marquee,
+  .animate-brand-marquee-reverse {
+    animation: none;
   }
 }

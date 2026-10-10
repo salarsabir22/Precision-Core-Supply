@@ -8,13 +8,13 @@ export function QuoteLink() {
   return (
     <Link
       href="/quote"
-      className="relative inline-flex h-9 items-center bg-gold px-3 text-[13px] font-semibold text-navy hover:bg-gold/90"
+      className="relative inline-flex h-9 items-center rounded-md bg-navy px-3.5 text-[13px] font-semibold text-white hover:bg-navy/90"
     >
       Quote
       {ready && count > 0 && (
         <span
           aria-hidden="true"
-          className="ml-2 grid min-w-5 place-items-center bg-blue px-1 font-mono text-[11px] text-white"
+          className="ml-2 grid min-w-5 place-items-center rounded-sm bg-gold px-1 font-mono text-[11px] text-navy"
         >
           {count}
         </span>

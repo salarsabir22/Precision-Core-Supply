@@ -27,7 +27,7 @@ export function MobileNav({ links, categories }: { links: readonly L[]; categori
   return (
     <div className="lg:hidden">
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger render={<Button variant="outline" size="icon" className="border-navy/15 bg-white text-navy hover:bg-muted hover:text-navy" />}>
+        <SheetTrigger render={<Button variant="outline" size="icon" className="border-navy/15 bg-white text-navy" />}>
           <MenuIcon />
           <span className="sr-only">Open menu</span>
         </SheetTrigger>
